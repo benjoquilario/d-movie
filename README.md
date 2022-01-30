@@ -13,9 +13,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](.src/assets/images/image-1.png)
-![](.src/assets/images/image-2.png)
-![](.src/assets/images/image-3.png)
+![](./src/assets/images/image-1.png)
+![](./src/assets/images/image-2.png)
+![](./src/assets/images/image-3.png)
 
 ### Links
 
