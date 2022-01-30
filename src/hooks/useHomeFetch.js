@@ -35,8 +35,6 @@ const useHomeFetch = () => {
                const { data } = request;
 
                setSearchMovie(data.results);
-
-               setIsSearching(false);
             } catch (err) {
                console.error(err);
                setError(true);
@@ -44,7 +42,7 @@ const useHomeFetch = () => {
          };
 
          if (!debouncedTerm) return;
-
+         setIsSearching(false);
          fetchSearchMovies();
       }, 1000);
 
