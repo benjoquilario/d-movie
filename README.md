@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# D-MOVIE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+D-MOVIE is a built with react that interacts with API where it can display the information of an movie. This app is a complete responsive in any devices.
 
-## Available Scripts
+### The App Usage
 
-In the project directory, you can run:
+Users should be able to:
 
-### `npm start`
+-  View the optimal layout for the site depending on their device's screen size
+-  See hover states for all interactive elements on the page
+-  Can click to any movie and will display the information about movie.
+-  Will have page for 404 Not Found
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Screenshot
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](.src/assets/images/image-1.png)
+![](.src/assets/images/image-2.png)
+![](.src/assets/images/image-3.png)
 
-### `npm test`
+### Links
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-  Source Code: [View Source Code](https://github.com/benjoquilario/Portfolio)
+-  Live Site URL: [Preview Site](https://d-movie.netlify.app/)
 
-### `npm run build`
+### Built with
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-  Semantic HTML5 markup
+-  JSX
+-  REACT
+-  REACT-ROUTER-DOM
+-  CSS custom properties
+-  API
+-  Flexbox
+-  CSS Grid
+-  Mobile-first workflow
+-  SCSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-  LinkedIn - [@benjoquilario](https://www.linkedin.com/in/benjo-quilario-415a351bb/)
+-  Twitter - [@iam_benjo](https://twitter.com/iam_benjo)

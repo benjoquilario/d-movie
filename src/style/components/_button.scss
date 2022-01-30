@@ -1,0 +1,67 @@
+.btn {
+   border: none;
+   cursor: pointer;
+   font-family: var(--fontFamily);
+   font-size: 0.9375rem;
+   font-weight: var(--font400);
+   position: relative;
+   transition: background-color 0.3s, border 0.3s ease-in;
+
+   &--menu {
+      @media screen and (min-width: 769px) {
+         display: none;
+      }
+   }
+
+   &--submit {
+      background-color: transparent;
+   }
+
+   &--more {
+      background-color: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+      margin-top: 30px;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: var(--font600);
+
+      &:hover {
+         background-color: var(--white);
+         color: var(--darkBlue);
+      }
+   }
+
+   &--back {
+      position: relative;
+      display: grid;
+      grid-template-columns: 33px 1fr;
+      align-items: center;
+      justify-items: center;
+      color: var(--white);
+
+      &:hover {
+         color: var(--red);
+
+         svg path {
+            fill: var(--red);
+         }
+      }
+      svg {
+         width: 18px;
+         height: 23px;
+      }
+   }
+
+   &--list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: var(--red);
+      height: 37px;
+      color: var(--white);
+      font-weight: var(--font600);
+      letter-spacing: 0.5px;
+   }
+}

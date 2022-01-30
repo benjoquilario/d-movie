@@ -1,0 +1,120 @@
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.p-2 {
+   padding: 0 3.4rem;
+
+   @media screen and (max-width: 800px) {
+      padding: 0 1rem;
+   }
+}
+
+.spinner {
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.lds-ring {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+}
+.lds-ring div {
+   box-sizing: border-box;
+   display: block;
+   position: absolute;
+   width: 64px;
+   height: 64px;
+   margin: 8px;
+   border: 8px solid #fff;
+   border-radius: 50%;
+   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+   border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+   animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+   animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+   animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+
+.ripples {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--darkBlue);
+   z-index: -1;
+
+   &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--darkBlue);
+      z-index: 1;
+   }
+}
+
+.skeleton {
+   width: 180px;
+
+   @media screen and (max-width: 1040px) {
+      width: 133.88px;
+   }
+
+   &.card {
+      background-color: var(--darkBlue);
+      width: 180px;
+      height: 270px;
+
+      @media screen and (max-width: 1040px) {
+         width: 133.88px;
+         height: 200px;
+      }
+
+      @media screen and (max-width: 760px) {
+         width: 122.41px;
+         height: 168px;
+      }
+   }
+
+   &.title {
+      background-color: var(--darkBlue);
+      width: 100%;
+      height: 25px;
+      margin-top: 10px;
+   }
+}
+
+.visually-hidden {
+   border: 0;
+   clip: rect(0 0 0 0);
+   height: 1px;
+   margin: -1px;
+   overflow: hidden;
+   padding: 0;
+   position: absolute;
+   width: 1px;
+}

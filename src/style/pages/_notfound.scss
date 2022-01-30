@@ -1,0 +1,42 @@
+.notfound {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   &__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      h1 {
+         color: var(--white);
+         font-size: 170px;
+         letter-spacing: 5px;
+      }
+
+      p {
+         color: var(--white);
+         font-size: 40px;
+         margin-top: -40px;
+         margin-bottom: 30px;
+      }
+
+      a {
+         font-size: 20px;
+         background-color: transparent;
+         color: var(--white);
+         padding: 9px 20px;
+         border: 2px solid var(--white);
+         transition: all 350ms ease-in;
+
+         &:hover {
+            background-color: var(--white);
+            color: var(--darkBlue);
+            transition: all 350ms ease-in;
+         }
+      }
+   }
+}
