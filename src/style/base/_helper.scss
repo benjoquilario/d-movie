@@ -98,6 +98,11 @@
          width: 122.41px;
          height: 168px;
       }
+
+      @media screen and (max-width: 375px) {
+         width: 157.5px;
+         height: 158px;
+      }
    }
 
    &.title {

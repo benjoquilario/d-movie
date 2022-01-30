@@ -7,6 +7,7 @@ import Spinner from '../../components/Spinner/Spinner';
 import MovieActor from '../../components/MovieInfo/MovieActor';
 import MovieBar from '../../components/MovieInfo/MovieBar';
 import NotFound from '../NotFound/NotFound';
+import Footer from '../../components/Footer.js/Footer';
 
 const Movie = () => {
    const { movieId } = useParams();
@@ -42,6 +43,7 @@ const Movie = () => {
 
             <MovieActor actors={movie.actors} />
          </main>
+         <Footer />
       </React.Fragment>
    );
 };
