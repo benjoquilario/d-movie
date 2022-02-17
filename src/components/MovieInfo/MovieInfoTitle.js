@@ -35,7 +35,11 @@ const MovieInfoTitle = ({
             </div>
             <div className="info__wrapper">
                <div className="info__back">
-                  <Link to="/" className="btn btn--back">
+                  <Link
+                     to="/"
+                     className="btn btn--back"
+                     style={{ color: 'white' }}
+                  >
                      <svg
                         id="Layer_1"
                         data-name="Layer 1"

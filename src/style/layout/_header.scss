@@ -13,7 +13,8 @@
    &__container {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-start;
+      gap: 14px;
    }
 
    &__logo {
@@ -67,5 +68,9 @@
          padding: 8px 18px;
          border-radius: 8px;
       }
+   }
+
+   &__theme {
+      margin-left: auto;
    }
 }
