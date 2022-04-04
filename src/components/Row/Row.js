@@ -8,18 +8,27 @@ const Row = ({ title, fetchUrl, href, isHome }) => {
    const [movies, setMovies] = useState(null);
 
    useEffect(() => {
-      const timer = setTimeout(() => {
-         const fetchMovie = async () => {
-            const request = await axios.get(fetchUrl);
-            const getMovies = request.data.results.slice(0, 6);
+      const controller = new AbortController();
+      const signal = controller.signal;
+      axios
+         .get(fetchUrl, { signal })
+         .then(res => {
+            if (!res.status) {
+               throw Error("Coulnt't not fetch the data");
+            } else {
+               setMovies(res.data.results.slice(0, 6));
 
-            setMovies(getMovies);
-            return request;
-         };
-         fetchMovie();
-      }, 2000);
+               return res;
+            }
+         })
+         .catch(err => {
+            if (err.name === 'AbortError') {
+               return 'Request Aborted ';
+            }
+            return err;
+         });
 
-      return () => clearTimeout(timer);
+      return () => controller.abort();
    }, [fetchUrl]);
 
    return (

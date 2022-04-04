@@ -20,33 +20,29 @@ const useHomeFetch = () => {
    }, [searchTerm]);
 
    useEffect(() => {
-      const timer = setTimeout(() => {
-         const fetchSearchMovies = async () => {
-            try {
-               setError(false);
-               setIsSearching(true);
+      const fetchSearchMovies = async () => {
+         try {
+            setError(false);
+            setIsSearching(true);
 
-               const request = await axios.get(requests.fetchSearch, {
-                  params: {
-                     query: debouncedTerm,
-                  },
-               });
+            const request = await axios.get(requests.fetchSearch, {
+               params: {
+                  query: debouncedTerm,
+               },
+            });
 
-               const { data } = request;
+            const { data } = request;
 
-               setSearchMovie(data.results);
-            } catch (err) {
-               console.error(err);
-               setError(true);
-            }
-         };
+            setSearchMovie(data.results);
+         } catch (err) {
+            console.error(err);
+            setError(true);
+         }
+      };
 
-         if (!debouncedTerm) return;
-         setIsSearching(false);
-         fetchSearchMovies();
-      }, 1000);
-
-      return () => clearTimeout(timer);
+      if (!debouncedTerm) return;
+      setIsSearching(false);
+      fetchSearchMovies();
    }, [debouncedTerm]);
 
    const onHandleSubmit = event => {

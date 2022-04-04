@@ -20,12 +20,14 @@ const Header = () => {
                <span>D</span>-MOVIE
             </a>
             <div className="header__cta">
-               <div>
-                  <div id="customBtn" className="customGPlusSignIn">
-                     <span className="icon"></span>
-                     <span className="buttonText">Google</span>
-                  </div>
-               </div>
+               <ul className="header__cta">
+                  <li>
+                     <a href=".">Movie</a>
+                  </li>
+                  <li>
+                     <a href=".">TV Shows</a>
+                  </li>
+               </ul>
             </div>
             <div className="header__theme">
                <button
